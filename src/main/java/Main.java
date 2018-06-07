@@ -6,11 +6,21 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-    private static final Path IMAGE_PATH = Paths.get("./best/");
     private static final int MAX_ITERATIONS = 1_000_000;
+    private static Path IMAGE_PATH = Paths.get("./best/");
 
     public static void main(String[] args) throws IOException {
-        Path darwinPath = Paths.get("darwin.png");
+        if (args.length < 1) {
+            System.out.println("First argument must be input file name!");
+            System.out.println("Second argument can be best output file directory!");
+            return;
+        }
+
+        if (args.length == 2) {
+            IMAGE_PATH = Paths.get(args[1]);
+        }
+
+        Path darwinPath = Paths.get(args[0]);
         Image darwin = new Image(darwinPath);
 
         Individual[] individuals = getInitial(15, darwin);
