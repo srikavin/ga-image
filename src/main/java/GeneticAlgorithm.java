@@ -1,9 +1,9 @@
 abstract class GeneticAlgorithm {
 
-    Individual[] population;
     final double goalFitness;
     final int max_iterations;
     final double pmut;
+    Individual[] population;
 
     GeneticAlgorithm(Individual[] initialPopulation, double goalFitness, int max_iterations, double pmut) {
 
@@ -13,5 +13,7 @@ abstract class GeneticAlgorithm {
         this.pmut = pmut;
     }
 
-    abstract void select(int n);
+    abstract Individual[] select();
+
+    abstract void run();
 }

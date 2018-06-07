@@ -1,7 +1,7 @@
-public abstract class Individual {
+public abstract class Individual<T extends Individual> {
     abstract double fitness();
 
-    abstract Individual recombine(Individual b);
+    abstract T recombine(T b);
 
     abstract void mutate(double pmut);
 }
