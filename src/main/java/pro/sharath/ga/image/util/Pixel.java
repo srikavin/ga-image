@@ -1,10 +1,10 @@
-package pro.sharath.ga.image;
+package pro.sharath.ga.image.util;
 
 public class Pixel {
-    int red;
-    int blue;
-    int green;
-    int rgb;
+    public int red;
+    public int blue;
+    public int green;
+    public int rgb;
 
     public Pixel(int red, int blue, int green) {
         this.red = red;

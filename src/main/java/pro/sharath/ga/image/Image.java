@@ -1,5 +1,7 @@
 package pro.sharath.ga.image;
 
+import pro.sharath.ga.image.util.Pixel;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;

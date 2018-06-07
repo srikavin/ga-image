@@ -1,5 +1,7 @@
 package pro.sharath.ga.image;
 
+import pro.sharath.ga.image.util.Pixel;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
