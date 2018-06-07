@@ -1,3 +1,5 @@
+package pro.sharath.ga.image;
+
 public abstract class Individual<T extends Individual> {
     abstract double fitness();
 

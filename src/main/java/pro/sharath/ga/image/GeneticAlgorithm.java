@@ -1,3 +1,5 @@
+package pro.sharath.ga.image;
+
 abstract class GeneticAlgorithm {
 
     final double goalFitness;

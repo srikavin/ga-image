@@ -1,3 +1,5 @@
+package pro.sharath.ga.image;
+
 public class Pixel {
     int red;
     int blue;
