@@ -34,7 +34,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
                             <mainClass>
-                                pro.sharath.ga.image
+                                pro.sharath.ga.image.Main
                             </mainClass>
                         </manifest>
                     </archive>
