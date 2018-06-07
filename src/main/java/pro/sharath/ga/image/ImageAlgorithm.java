@@ -48,7 +48,6 @@ public class ImageAlgorithm extends GeneticAlgorithm {
 
         while (bestFitness < this.goalFitness && iterations < this.max_iterations) {
             Individual[] newPopulation = new Individual[population.length];
-            System.out.println("iterations = " + iterations);
             for (int i = 0; i < population.length; i++) {
                 Individual[] parents = select();
                 @SuppressWarnings("unchecked")
